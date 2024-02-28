@@ -1,0 +1,258 @@
+/* 
+main-nav 
+
+*/
+
+.main--header {
+  /* max-width: 1440px;
+  margin: 0 auto; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+}
+
+/* 
+
+hero section 
+
+*/
+
+#home {
+  background: var(--secondary-color);
+}
+
+.open--menu {
+  /* font-size: 1.5rem; */
+  color: #fff;
+  padding-right: 1.5rem;
+}
+
+.logo {
+  /* height: 9rem;
+  width: 9rem; */
+  height: 6.2rem;
+  width: 6.2rem;
+  /* align-self: flex-start; */
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  /* margin-right: 1rem; */
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  right: -200px;
+  /* background: #253a47; */
+  background: var(--primary-color);
+  height: 100vh;
+  transition: all 1s 0.2s;
+}
+
+.close--menu {
+  align-self: flex-end;
+  /* color: #504c4c; */
+  color: var(--tertiary-color);
+}
+
+.nav-link {
+  padding: 2rem;
+}
+
+.nav-link a {
+  color: #fff;
+}
+
+/*
+
+home description 
+
+*/
+
+.home-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 2rem; */
+  padding-top: 2rem;
+  gap: 2rem;
+}
+
+.home-description .title {
+  font-size: 1.7rem;
+}
+
+.home-description p {
+  padding: 1rem;
+  text-align: center;
+}
+
+/*
+
+benefits 
+
+*/
+
+.course-benefits {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* justify-content: center;
+  align-items: center; */
+  /* gap: 2rem; */
+}
+
+.benefit {
+  flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  background: var(--tertiary-color);
+  text-align: center;
+}
+
+.icon {
+  background: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--tertiary-color);
+}
+
+.benefit h2 {
+  margin: 1.5rem 0;
+  letter-spacing: 0.1rem;
+}
+
+/*
+ media queries
+ */
+
+@media screen and (min-width: 700px) {
+  #home {
+    /* background: url('./assets/hero_background.jpg'); */
+    background: var(--secondary-color);
+    /* height: 100vh; */
+    height: 90vh;
+  }
+
+  .main--header {
+    position: sticky;
+    top: 0;
+    /* background-color: var(--secondary-color); */
+    padding: 0 5rem;
+  }
+
+  #open--menu {
+    display: none;
+  }
+  .close--menu {
+    display: none;
+  }
+
+  /* .logo {
+     height: 5rem;
+    width: 5rem; 
+    align-self: flex-start;
+  } */
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2.5rem;
+
+    top: auto;
+    right: auto;
+    position: relative;
+    background: inherit;
+    height: auto;
+    /* transition: all 1s 0.2s; */
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .nav-link {
+    padding: 0;
+    font-size: 1.35rem;
+  }
+  .nav-link:hover a {
+    color: var(--primary-color);
+    /* color: var(--tertiary-color); */
+  }
+
+  .home-description {
+    /* margin-top: 2rem; */
+    padding-top: 2rem;
+    gap: 1rem;
+  }
+
+  .home-description .title {
+    font-size: 2.3rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .home-description p {
+    width: 80%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .btn {
+    padding: 0.7rem 1.2rem;
+    transition: all 0.5s 0.2s;
+  }
+
+  .btn:hover {
+    letter-spacing: 0.2rem;
+  }
+
+  .course-benefits {
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* justify-content: center;
+  align-items: center; */
+    /* gap: 2rem; */
+    padding: 2rem 0;
+  }
+  .benefit {
+    flex-basis: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    background: var(--tertiary-color);
+    text-align: center;
+    border-radius: 1rem;
+  }
+
+  .icon {
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+  }
+
+  .icon i {
+    font-size: 1.2rem;
+    /* padding: 0rem; */
+  }
+  .benefit h2 {
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+    /* letter-spacing: 0.1rem; */
+  }
+  .benefit p {
+    font-size: 0.7rem;
+  }
+}
